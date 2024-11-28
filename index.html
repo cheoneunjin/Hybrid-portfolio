@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./down/themes/pastel_cheon.min.css" />
+	<link rel="stylesheet" href="./down/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="./down/jquery.mobile-1.4.5.min.css"/>
+	<script src="./down/jquery-1.11.1.min.js"></script>
+	<script src="./down/jquery.mobile-1.4.5.min.js"></script>
+	<script src = "./cordova.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="d">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="d">
+			<h1>It's me App</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="intro.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">Profile</a></li>
+				<li><a href="#movie" data-rel="dialog">Project Video</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">Interests</a></li>
+				<li><a href="#gallery">Plan</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="d">
+			<h1>Portfolio_Cheon_Eunjin</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="d">
+		<div data-role="header" data-theme="d">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>Profile</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="photo_me.jpg" height="200" width="150">
+				</div>			
+			<div data-role="collapsible-set" data-theme="d" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>인적사항</h3>
+						이름 : 천은진<br>
+						영문 : Cheon Eunjin<br>
+						생년월일 : 2000.02.23<br>
+						메일주소 : jenny3658@naver.com<br>
+						주소지 : 부산광역시 동래구<br>
+				</div>
+				<div data-role="collapsible">
+					<h3>학력</h3>
+						2017.03 동래여자 고등학교 입학<br>
+						2019.02 동래여자 고등학교 졸업<br>
+						2019.03 경성대학교 컴퓨터공학과 입학<br>
+						2023.02 경성대학교 컴퓨터공학과 졸업(예정)<br>
+					<p>
+					<img src="ksulogo.jpg" height="50" width="250"><br>
+					<b>현재 경성대학교 컴퓨터 공학과에 재학중입니다.</b></p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>수상내역 및 자격증 취득 현황</h3>
+					<b>수상내역</b><br>
+					<p>2020.12.16   2020 KSU 드림하이 진로멘토링 활동 보고서 평가 장려상 수상   경성대학교 취업진로처</p>
+					<br>
+					<b>자격증 취득 현황</b><br>
+					<p>
+						2020.02.07   컴퓨터활용능력 2급<br>
+						2020.07.27   CAD 실무능력평가 2급<br>
+						2020.10.21   MOS : Microsoft office powerpoint 2016 : core<br>
+						2020.12.09   MOS : Microsoft office excel 2016 expert<br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="d">
+			<h1>Portfolio_Cheon_Eunjin</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="c">
+		<div data-role="header" data-position="fixed" data-theme="c">
+			<h1>Project Video</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">아두이노를 이용한 블루투스 무드등 제작 영상</div><br/>
+			<li><video controls width="100%" height="500" preload="metadata">
+				<source src="movie.mp4" type="video/mp4">
+				</video>
+			<div class="ui-bar ui-bar-a">아두이노를 이용한 금고 제작 영상</div><br/>
+			<li><video controls width="100%" height="500" preload="metadata">
+				<source src="movie_2.mp4" type="video/mp4">
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="c">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1" data-theme="c">
+		<div data-role="header" data-theme="c">
+			<h1>1. 시스템 보안</h1>
+		</div>
+		<div  style="text-align:center">
+			<br>
+			<img src="system_security.png" height="150" width="150"><br>
+			저는 보안 분야에 큰 관심을 가지고 있습니다. <br>
+			시스템 보안이란  권한 없는(허가받지 않은) 사용자에 의한 파일, 폴더 및 장치 등의 사용을 제한하여 보호하는 시스템 기능을 말합니다. <br>
+		 	이러한 관심사에 따라 정보보안 관리자라는 직업을 생각하고 있으며 4학년이 되고 자격을 얻으면 정보보안기사를 응시하는 것이 저의 계획입니다.
+		 	<br>
+		 </div>
+		<div data-role="footer" data-theme="c">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2" data-theme="c">
+		<div data-role="header" data-theme="c">
+			<h1>2. 소프트웨어 개발</h1>
+		</div>
+		<div  style="text-align:center">
+			<br>
+			<img src="software_developer.png" height="150" width="150"><br>
+			다음으로 저는 소프트웨어 개발에 대해 관심을 가지고 있습니다. <br>
+			소프트웨어 개발은 C, C#, JAVA 등의 프로그래밍 언어를 배우고 사용하는 과정에서 큰 흥미를 가지게 되었습니다. 특히 2학년 때 수강한 마이크로프로세서 과목에서 아두이노를 사용하면서 더 많은 경험을 하고 싶다는 생각을 하게되었고 저는 이러한 소프트웨어 개발과정과 기능에 대해 이론적으로 배울 수 있는 정보처리기사를 4학년이 되어 취득할 계획을 가지고 있습니다.
+			<br>
+		 </div>
+		<div data-role="footer" data-theme="c">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="d">
+		<div data-role="header" data-position="fixed"  data-theme="d">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>Plan</h1>
+		</div>
+		<div data-role="content" class="ui-content" style="text-align:center">
+			<a href="#4-1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">2021년 하계방학</a><br>
+			<a href="#4-2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">2021년 2학기</a><br>
+			<a href="#4-3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">2022년 동계방학</a><br>
+			<div data-role="popup" id="4-1" class="ui-content" style="max-width:280px">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+				<p>1. 하계단기실습 참여</p>
+				<p>2. 컴퓨터활용능력 1급 실기 취득</p>
+				<p>3. 토익시험 응시</p>
+			</div>
+			<div data-role="popup" id="4-2" class="ui-content" style="max-width:280px">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+				<p>1. 정보처리기사 필기준비</p>
+				<p>2. 토익시험 응시(800점 목표)</p>
+				<p>3. 한국사능력검정시험 응시</p>
+			</div>
+			<div data-role="popup" id="4-3" class="ui-content" style="max-width:280px">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+				<p>1. 정보처리기사 필기 응시</p>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="d">
+			<h1>Portfolio_Cheon_Eunjin</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
