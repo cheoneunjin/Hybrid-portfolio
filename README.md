@@ -47,13 +47,16 @@
                NDK - un check
 
 8. 환경변수 설정
+
    
    JAVA_HOME : C:\Program Files\Java\jdk1.8.0_45
+
 
    ANDROID_SDK_ROOT : C:\Users\cs\AppData\Local\Android\Sdk
 
 
-   PATH			C:\Program Files\Java\jdk-10.0.2\bin
+   PATH
+                        C:\Program Files\Java\jdk-10.0.2\bin
 
                   	C:\hybrid\gradle-6.1.1\bin
    
@@ -68,6 +71,7 @@
 10. 코르도바(폰갭) CLI 설치
 11. [노드.js 설치](https://nodejs.org/ko/)
    - 시작 - Node.js - Node.js command prompt
+
      >cd \
      
      >md hybridProj
@@ -117,6 +121,6 @@
 
     CDN 방식을 다운로드 방식으로 변경
 
-  >cordova run android
+    >cordova run android
 
    
