@@ -54,19 +54,19 @@
 
    ANDROID_SDK_ROOT : C:\Users\cs\AppData\Local\Android\Sdk
 
-
    PATH
-                        C:\Program Files\Java\jdk-10.0.2\bin
 
-                  	C:\hybrid\gradle-6.1.1\bin
+       C:\Program Files\Java\jdk-10.0.2\bin
+
+       C:\hybrid\gradle-6.1.1\bin
    
-		      	C:\hybrid\apache-ant-1.10.5\bin
+       C:\hybrid\apache-ant-1.10.5\bin
    
-		      	C:\Users\cs\AppData\Local\Android\Sdk\tools
+       C:\Users\cs\AppData\Local\Android\Sdk\tools
    
-	      		C:\Users\cs\AppData\Local\Android\Sdk\platform-tools
+       C:\Users\cs\AppData\Local\Android\Sdk\platform-tools
    
-	      		C:\Users\cs\AppData\Local\Android\Sdk\build-tools
+       C:\Users\cs\AppData\Local\Android\Sdk\build-tools
 
 10. 코르도바(폰갭) CLI 설치
 11. [노드.js 설치](https://nodejs.org/ko/)
@@ -104,9 +104,9 @@
     
     스마트폰 연결
     
-	       연결모드를 "저장소를 PC에 연결" 모드를 선택하면 안됨
+	   연결모드를 "저장소를 PC에 연결" 모드를 선택하면 안됨
     
-	       'USB 사용용도' 옵션에서 "미디어 파일 전송(MTP 연결)" 모드가 아닌 다른 모드
+	   'USB 사용용도' 옵션에서 "미디어 파일 전송(MTP 연결)" 모드가 아닌 다른 모드
 
     >cordova run android --list
 
@@ -123,4 +123,9 @@
 
     >cordova run android
 
-   
+---
+### 하이브리드 앱 개발
+안드로이드 스튜디오에 가상 단말기를 통해 출력되는 하이브리드 앱을 개발한다.
+
+jQuery Mobile - ThemeRoller을 이용한 css 파일 생성 및 적용
+
