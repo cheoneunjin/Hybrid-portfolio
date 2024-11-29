@@ -17,16 +17,13 @@
 ---
 
 ### Install
-1. [JDK 설치](https://www.oracle.com/technetwork/java/javase/downloads/index.html
-		Java SE 8u241)
+1. [JDK 설치](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+   - Java SE 8u241
 2. [아파치 앤트 설치](http://ant.apache.org/bindownload.cgi)
    - 1.10.7 .zip archive: apache-ant-1.10.7-bin.zip 다운로드
-3. [그래들 설치](https://gradle.org/install/
-	Installing manually)
-   -v6.1.1
-			Jan 24, 2020
-				Download: binary-only
-5. [안드로이드 스튜디오 설치](https://developer.android.com/studio/)
+3. [그래들 설치](https://gradle.org/install/)
+   -v6.1.1 Jan 24, 2020 Download: binary-only
+4. [안드로이드 스튜디오 설치](https://developer.android.com/studio/)
    ※SDK Manager 
 		    SDK Tools
 			     Android SDK Tools
@@ -37,7 +34,7 @@
 			     Intel x86 Emulator Accelerator(HAXM installer)
 			     NDK - un check
 
-6. 환경변수 설정
+5. 환경변수 설정
    JAVA_HOME : C:\Program Files\Java\jdk1.8.0_45
    ANDROID_SDK_ROOT : C:\Users\cs\AppData\Local\Android\Sdk
 
@@ -49,21 +46,33 @@
 	      		C:\Users\cs\AppData\Local\Android\Sdk\platform-tools
 	      		C:\Users\cs\AppData\Local\Android\Sdk\build-tools
 
-7. 코르도바(폰갭) CLI 설치
-8. [노드.js 설치](https://nodejs.org/ko/)
+6. 코르도바(폰갭) CLI 설치
+7. [노드.js 설치](https://nodejs.org/ko/)
    - 시작 - Node.js - Node.js command prompt
      >cd \
+     
      >md hybridProj
+     
      >cd hybridProj
+     
      >npm install -g phonegap
+     
      >npm update -g phonegap
+     
      >npm install -g cordova
+     
      >npm update -g cordova
+     
      >cordova -v
+     
      >cordova create test com.example.test testApp -d
+     
      >cd test
+     
      >dir
+     
      >cordova platform add android
+     
      >dir platform
 
   - 사용하고 있는 스마트폰 USB 드라이버 파일 다운로드
